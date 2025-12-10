@@ -1,5 +1,3 @@
-print("project file")
-
-print("this is python")
-
-print("chanege only main file")
+'''
+we did not start a project yet.
+'''

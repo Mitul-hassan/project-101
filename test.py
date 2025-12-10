@@ -2,8 +2,8 @@
 
 '''
 1. Comment (Single/Multi) ✅
-2. Variable 
-3. Print
+2. Variable✅
+3. Print✅
 '''
 #1.learning comment single and multiple.
 
