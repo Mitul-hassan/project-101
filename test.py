@@ -109,6 +109,10 @@ print('i will print on the same line')
 #note:we add a space after end=" " for better readability.
 
                    #Day-2
+'''
+operators✅
+'''
+                   
 #operators:used to perform operation on variables and values.
 # + operator usally use to add of two valued as well as can be use to add a variable and vlue or add two variables.
 print(5+10)
@@ -127,3 +131,48 @@ print(x/y)
 print(x%y)
 print(x**y) # **=power
 print(x//y) # //=floor division(rounds down to the nearest integer)
+
+#assignment operator
+x+=2 #x=x+2
+x**=3
+x&=3 #binary 'and' operation bit wise(suppose x=2=0010
+                         #   3=0011 so the and of 0010
+                        #                        0011
+                        #                       =0010=2)
+x|=3 #binary bit wise 'or' operation.
+x^=3 # bit wise 'x-or' operation.
+x>>=3 #right shift of 3 bits.
+x<<=2 #left shift of 2 bits.
+print(x:=3) # x=3 print(x).known as walrus operator.                     
+x=5
+y=3
+print(x==y)
+print(x!=y)
+print(x>y)
+print(x<y)
+print(x>=y)
+print(x<=y)
+print(1<x<10)
+print(1<x and x<10)
+print(1<x or x<10)
+print(not(x>3 and x<10))  # reverse the result with not.
+x=[1,2,3]
+y=[1,2,3]
+print(x is y)     #'is''is not' checks both variables point to the same object in memory.
+print(x is not y)
+print(x==y)       # '==' check if the values of both variables are equal.            
+fruits=["apple","banana","chery"]
+print("pineapple" in fruits)     # 'in'returns true if a sequence with specified value is present in the object.               
+print("pineapple" not in fruits) #'not in' returns true if a sequence with specified value is not present in the object. 
+text='hello world'
+print('hi' in text)
+print ("hello" in text)
+print('z' not in text)
+'''
+which operator will work first,second,third......
+()	Parentheses	
+**	Exponentiation	
++x  -x  ~x	Unary plus, unary minus, and bitwise NOT	
+*  /  //  %	Multiplication, division, floor division, and modulus	
++  -	Addition and subtraction
+'''
