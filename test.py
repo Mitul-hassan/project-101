@@ -107,3 +107,23 @@ print("Python is " + x)
 print('hello world',end=" ")
 print('i will print on the same line')
 #note:we add a space after end=" " for better readability.
+
+                   #Day-2
+#operators:used to perform operation on variables and values.
+# + operator usally use to add of two valued as well as can be use to add a variable and vlue or add two variables.
+print(5+10)
+sum1= 100+50
+sum2=sum1+250
+sum3=sum1+sum2
+print(sum1,sum2,sum3)
+
+#arithmetic opwerators
+x=15
+y=4
+print(x+y)
+print(x-y)
+print(x*y)
+print(x/y)
+print(x%y)
+print(x**y) # **=power
+print(x//y) # //=floor division(rounds down to the nearest integer)
