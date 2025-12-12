@@ -187,7 +187,7 @@ which operator will work first,second,third......
              # Ending Time: 2:30 am 🕐
                 
 '''
-Lists
+Lists✅
 '''
 
 '''list are used to store multiple items in a single variable.Lists are created using square brackets.
