@@ -195,5 +195,82 @@ list3=['abc',34,True,'male']
 print(list3)
 print(type(list1))
 #list() comstructor:we can create new list using this.
-list4=list(('mahmudul','hassan','mitul'))
+list4=list(('mahmudul','hassan','mitul','fahim','ashik','ananta'))
 print(list4)
+
+#ACCESS ITEMS
+#access them by referring to the index number
+print(list4[1])
+#Negative indexing means start from the end.-1 refers to the last item, -2 refers to the second last item etc.
+print(list4[-1])
+#we can specify a range of indexes by specifying where to start and where to end the range.When specifying a range, the return value will be a new list with the specified items.
+print(list4[2:5]) #that means from 2 index to befor 5.5 is not included and index start from 0.
+print(list4[2:])  #this will return from 2 to end.
+print(list4[-4:-1])
+#To determine if a specified item is present in a list use the in keyword
+if "mahmudul" in list4:
+    print("yes,hete acche")
+
+#Change Item Value
+#To change the value of a specific item, refer to the index number
+#suppose to change the second item.
+list4[1]='shakil'
+print(list4)
+# to change 1 to excluding 3
+list4[1:3]=['billah','masum'] 
+print(list4)
+#If we insert more items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly
+list4[1:2]=['alif','fardin']
+print(list4) #The length of the list will change when the number of items inserted does not match the number of items replaced.
+#if we insert less items than we replace, the new items will be inserted where we specified, and the remaining items will move accordingly.
+list4[1:3]=['abul']
+print(list4)
+
+#Add List Items
+#Insert Item
+#To insert a new list item, without replacing any of the existing values, we can use the insert() method.this method inserts an item at the specific index.
+thislist=['apple','banana','chery']
+thislist.insert(2,'watermelon')
+print(thislist) #watermelon will inserted in idex 2 and before index value will take place after watermelon and other values one by one.
+# As a result of the example above, the list will now contain 4 items
+
+#Append Items:To add an item to the end of the list, use the append() method.
+thislist=['apple','banana','cherry']
+thislist.append('orange')
+print(thislist)
+#Extend List:To append elements from another list to the current list, use the extend() method.
+thislist=['apple','banana','chery']
+tropical=['mango','pineapple','papaya']
+thislist.extend(tropical)
+print(thislist) #The elements will be added to the end of the list.
+#Add Any Iterable:The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+thislist.extend(thistuple)
+print(thislist)
+
+#Remove List Items
+#Remove Specified Item:The remove() method removes the specified item.
+thislist=['apple','banana','cherry']
+thislist.remove('banana')
+print(thislist)
+#If there are more than one item with the specified value, the remove() method removes the first occurrence
+#Remove the first occurrence of "banana":
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
+print(thislist)
+#The pop() method removes the specified index.If we do not specify the index, the pop() method removes the last item.
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+#The del keyword also removes the specified index.
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+del thislist  #The del keyword can also delete the list completely if we donot mention the index.
+#The clear() method empties the list.The list still remains, but it has no content.
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
+
+
