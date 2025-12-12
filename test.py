@@ -1,6 +1,6 @@
             # Day-01 Learning 📅
-            # Starting Time: 11:35 am
-             # Ending Time: 2:30 am
+            # Starting Time: 11:35 am 🕐
+             # Ending Time: 2:30 am 🕐
 
 '''
 1. Comment (Single/Multi) ✅
@@ -111,8 +111,8 @@ print('i will print on the same line')
 #note:we add a space after end=" " for better readability.
 
             # Day-02 Learning 📅
-            # Starting Time: 11:05 am
-            # Ending Time: 2:00 am
+            # Starting Time: 11:05 am 🕐
+            # Ending Time: 2:00 am 🕐
             
                    
 '''
@@ -183,8 +183,8 @@ which operator will work first,second,third......
 +  -	Addition and subtraction
 '''
              # Day-03 Learning 📅
-             # Starting Time: 1:05 am
-             # Ending Time: 2:30 am
+             # Starting Time: 1:05 am 🕐
+             # Ending Time: 2:30 am 🕐
                 
 '''
 Lists
