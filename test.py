@@ -1,4 +1,6 @@
-          #First Day of Learning
+            # Day-01 Learning 📅
+            # Starting Time: 11:35 am
+             # Ending Time: 2:30 am
 
 '''
 1. Comment (Single/Multi) ✅
@@ -108,7 +110,11 @@ print('hello world',end=" ")
 print('i will print on the same line')
 #note:we add a space after end=" " for better readability.
 
-                   #Day-2
+            # Day-02 Learning 📅
+            # Starting Time: 11:05 am
+            # Ending Time: 2:00 am
+            
+                   
 '''
 operators✅
 '''
@@ -176,7 +182,10 @@ which operator will work first,second,third......
 *  /  //  %	Multiplication, division, floor division, and modulus	
 +  -	Addition and subtraction
 '''
-                #Day-3
+             # Day-03 Learning 📅
+             # Starting Time: 1:05 am
+             # Ending Time: 2:30 am
+                
 '''
 Lists
 '''
