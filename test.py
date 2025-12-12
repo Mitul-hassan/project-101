@@ -176,3 +176,24 @@ which operator will work first,second,third......
 *  /  //  %	Multiplication, division, floor division, and modulus	
 +  -	Addition and subtraction
 '''
+                #Day-3
+'''
+Lists
+'''
+
+'''list are used to store multiple items in a single variable.Lists are created using square brackets.
+List items are ordered, changeable, and allow duplicate values.
+List items are indexed, the first item has index [0], the second item has index [1] etc.
+When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+If we add new items to a list, the new items will be placed at the end of the list.list item can be of any data type.
+'''
+thislist=["apple","banana","cherry"]
+print(thislist)
+list1=[1,2,3,4,5]
+list2=[True,False,False]
+list3=['abc',34,True,'male']
+print(list3)
+print(type(list1))
+#list() comstructor:we can create new list using this.
+list4=list(('mahmudul','hassan','mitul'))
+print(list4)
