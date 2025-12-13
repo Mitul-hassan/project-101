@@ -282,4 +282,63 @@ thislist = ["apple", "banana", "cherry"]
 thislist.clear()
 print(thislist)
 
+              # Day-04 Learning 📅
+              # Starting Time: 10:30 am 🕐
+              # Ending Time: :30 am 🕐
+#LOOP LIST
+#print all item in the list one by one by using for loop.
+thislist=['apple','banana','cherry']
+for x in thislist:
+    print(x) 
+    
+#using index number:
+thislist=['apple','banana','cherry']
+for i in range (len(thislist)):
+    print(thislist[i])  #Using the range() and len() functions to create a suitable iterable.
+
+#using while loop:
+thislist=['apple','banana','cherry']
+i=0
+while i<len(thislist):
+    print(thislist[i])
+    i+=1
+
+#LOPING USING LIST COMPREHENSION:
+#short hand 'for' loop.
+thislist=['alu','kadu','jingha']
+[print(x) for x in thislist]
+
+#using 'for' loop without list comprehension 
+fruits=['apple1','banana1','cherry1','kiwi1','mango1']
+newlist=[]
+
+for fruit in fruits:
+    if "apple1" in fruit:
+        newlist.append(fruit) 
+    elif "banana1" in fruit:
+        newlist.append("hunky punky")    
+    # break
+print(newlist)
+
+#with list comrehension
+fruits=['alu','kadu','jhinga','morich']
+newlist=[x for x in fruits if "a" in x]
+print(newlist)
+
+#synthex=[(return ki korbo)(lopp & condition) ]
+newlist=[x for x in fruits if x!='alu']
+print(newlist)
+newlist=[x for x in range(10)] #use of range() function.
+print(newlist)
+newlist=[x for x in range(8) if x<5]
+print(newlist)
+#Set the values in the new list to upper case:
+newlist=[x.upper() for x in fruits]
+print(newlist)
+#Set all values in the new list to 'hello'
+newlist=['hello' for x in fruits]
+print(newlist)
+#Return "orange" instead of "morich"
+newlist=[x if x!='morich' else 'orange' for x in fruits]
+print(newlist)
 
