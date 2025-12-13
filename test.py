@@ -187,7 +187,7 @@ which operator will work first,second,third......
              # Ending Time: 2:30 am 🕐
                 
 '''
-Lists✅
+Lists(access list,change list,add list,remove list)✅
 '''
 
 '''list are used to store multiple items in a single variable.Lists are created using square brackets.
@@ -285,6 +285,10 @@ print(thislist)
               # Day-04 Learning 📅
               # Starting Time: 10:30 am 🕐
               # Ending Time: :30 am 🕐
+'''
+1.loop list✅
+2.comprehension list✅
+'''
 #LOOP LIST
 #print all item in the list one by one by using for loop.
 thislist=['apple','banana','cherry']
