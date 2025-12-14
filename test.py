@@ -326,6 +326,7 @@ print(newlist)
 
 #with list comrehension
 fruits=['alu','kadu','jhinga','morich']
+print(len(fruits))
 newlist=[x for x in fruits if "a" in x]
 print(newlist)
 
