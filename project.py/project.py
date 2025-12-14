@@ -7,5 +7,7 @@
                           # Starting Time: 1:00 am 🕐
                           # Ending Time: : am 🕐
                           
- print("HI")
-    
+print("HI")
+x=input("which operator do you wanna use like +,-,*....") #we can take input by input() function.+
+Y=int(input("How many numbers to operate"))   # we can chose which type of input i want to take like int,float etc by int(),flost() build in function.
+list=[]
