@@ -347,3 +347,57 @@ print(newlist)
 newlist=[x if x!='morich' else 'orange' for x in fruits]
 print(newlist)
 
+                  # Day-06 Learning 📅
+                  # Starting Time: 1:15 am 🕐
+                  # Ending Time: 2:30 am 🕐
+'''
+1.sort list
+2.copy list
+3.join list
+4.list method
+'''
+#sort list:'sort()' method that will sort the list alphanumerically,assending by default.
+thislist=['orrange', 'mango','kiwi','pineapple','banana']
+thislist.sort()
+print(thislist)
+
+thislist=[100,50,65,82,23]
+thislist.sort()
+print(thislist)
+
+#to sort descending, use the keyword argument "reverse=True".
+thislist=['ornage','mango','kiwi','pineapple','banana']
+thislist.sort(reverse=True)
+print(thislist)
+
+#customizing a function using the key word argument "key=function".The function will return a number that will be used to sort the list .
+#sort the list bassed on how close the number is to 50:
+def myfunc(n):
+    return abs(n-50)
+
+thislist=[100,50,65,82,23]
+thislist.sort(key=myfunc)    #this will minus 50 from the element and sort in ascending order then it will return as the main elemnt. 
+print(thislist)  #like first, minus reslt in ascending order =[0,15,27,32,50] if we convert it to main element=[50,65,23,32,100].
+
+#by default the 'sort()' mthod is case sensative.
+thislist=['banana','Oraange','Kiwi','cherry']
+thislist.sort()
+print(thislist)
+
+#if we want case-insensative sort function we have to use 'str.lower' as a key function.
+thislist.sort(key=str.lower) #str.lower converts each word to lowercase only for comparison, not permanently.
+print(thislist)
+
+#The 'reverse()' method reverses the current sorting order of the elements.
+thislist=['banan','Orange','Kiwi','cherry'] #current sorting order.
+thislist.reverse() #this will just revese the lis.
+print(thislist) 
+
+#Copy list:You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.
+#using the 'copy()' method,list() method,:(slice) operator.
+thislist=['apple','banana','chery']
+mylist=['hassan','mitul']
+mylist=thislist.copy()
+mylist=list(thislist)
+mylist=thislist[:]
+print(mylist) #after coping from thislist all element of mylist will be replaced by thislist element.there will no elment of mylist.
