@@ -401,3 +401,34 @@ mylist=thislist.copy()
 mylist=list(thislist)
 mylist=thislist[:]
 print(mylist) #after coping from thislist all element of mylist will be replaced by thislist element.there will no elment of mylist.
+
+#Join list
+#using '+' operator
+list1=['a','b','c']
+list2=[1,2,3]
+list3=list1+list2
+print(list3)
+#by appending all the items from list2 into list1.
+list1=['a','b','c']
+list2=[1,2,3]
+for x in list2:
+    list1.append(x)
+print(list1)
+#using 'extend()' method
+list1.extend(list2)
+print(list1)
+'''
+all list methods-
+
+append()	Adds an element at the end of the list
+clear()	    Removes all the elements from the list but list remain not the value.
+copy()	    Returns a copy of the list
+count()	    Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()	    Returns the index of the first element with the specified value [x = fruits.index(32)] [x = fruits.index("cherry", 4) '4'= where to seach start]
+insert()	Adds an element at the specified position
+pop()	    Removes the element at the specified position
+remove()	Removes the item with the specified value
+reverse()	Reverses the order of the list
+sort()	    Sorts the list
+'''
