@@ -417,3 +417,95 @@ print(list1)
 #using 'extend()' method
 list1.extend(list2)
 print(list1)
+
+
+                # Day-06 Learning 📅
+                # Starting Time: 1:15 am 🕐
+                # Ending Time: 2:52 am 🕐
+'''
+Python Tuples
+1.Access Tuples✅
+2.Update Tuples✅
+
+'''
+#Tuples are use to store multiple items in a single variable.
+#Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+#A tuple is a collection which is ordered and unchangeable.
+#Tuples are written with round brackets.
+thistuple= ('apple','banana','cherry')
+print(thistuple)
+
+#To determine how many items a tuple has, use the len() function:
+thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))
+
+#To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
+thistuple = ('apple',)
+print(thistuple)
+thistuple = ('apple') #not a tuple
+
+#Tuple items can be of any data type.String, int and boolean data types.
+tuple1 = ("apple", "banana", "cherry")
+tuple2 = (1, 5, 7, 9, 3)
+tuple3 = (True, False, False)
+
+#A tuple with strings, integers and boolean values:
+tuple1 = ("abc", 34, True, 40, "male")
+
+#It is also possible to use the tuple() constructor to make a tuple.
+thistuple =tuple(('apple','banan','cherry'))
+print(thistuple)
+
+#Access tuple items
+#access tuple items by referring to the index number, inside square brackets:
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1])
+
+#Negative indexing means start from the end.
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[-1])
+
+#can specify a range of indexes by specifying where to start and where to end the range.
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:5])
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[:4])
+
+#To determine if a specified item is present in a tuple use the in keyword:
+thistuple = ('apple','banana','cherry')
+if 'apple' in thistuple:
+    print('yes,apple has')
+    
+#Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
+#But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.
+
+#change tuple values:
+x=('apple','banana','cherry')
+y=list(x)
+y[1]='kiwi'
+x=tuple(y)
+print(x)
+
+#add items:
+thistuple = ('apple','banana','chery')
+y = list(thistuple)
+y.append('orange')
+thistuple = tuple(y)
+print(thistuple)
+
+#add tuple to tuple:
+thistuple = ('apple', 'banan', 'orange')
+y = ('green', 'yellow', 'orange')
+thistuple += y
+print(thistuple)
+
+#remove tuple:
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+#can delete the tuple completely:
+thistuple = ("apple", "banana", "cherry")
+del thistuple
+print(thistuple) #this will raise an error because the tuple no longer exists
