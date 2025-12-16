@@ -19,11 +19,11 @@ for i in range(countNum - 1):
         calcNum *= numList[i + 1]
     elif operatorSign[i] == "/":
         calcNum /= numList[i + 1]
-    elif operatorSign[i] == '>>':
-        calcNum=int(calcNum)
-        calcNum >>= numList[i + 1]
-    elif operatorSign[i] == '<<':
-        calcNum=int(calcNum)
+    elif operatorSign[i] == '>>':        #calcNum becomes a float (due to /).Then bitwise operators will fail ❌.
+        calcNum=int(calcNum)              #Example: calcNum = 5
+        calcNum >>= numList[i + 1]          #       calcNum /= 2    now 2.5 (float)
+    elif operatorSign[i] == '<<':           #       calcNum &= 3      # ❌ TypeError
+        calcNum=int(calcNum)                #       Same for:>>, <<, ^
         calcNum <<= numList[i + 1]
     elif operatorSign[i] == "&":
         calcNum=int(calcNum)
@@ -36,9 +36,6 @@ print(calcNum)
 
 
 
-# <<  >>	Bitwise left and right shifts	
-# &	Bitwise AND	
-# ^	Bitwise XOR
 
 
 # Example to run : 10 >> 2 * 11 << 3 / 10 & 2 ^ 6
