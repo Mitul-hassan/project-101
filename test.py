@@ -349,12 +349,12 @@ print(newlist)
 
                   # Day-06 Learning 📅
                   # Starting Time: 1:15 am 🕐
-                  # Ending Time: 2:30 am 🕐
+                  # Ending Time: 2:52 am 🕐
 '''
-1.sort list
-2.copy list
-3.join list
-4.list method
+1.sort list✅
+2.copy list✅
+3.join list✅
+4.list method✅
 '''
 #sort list:'sort()' method that will sort the list alphanumerically,assending by default.
 thislist=['orrange', 'mango','kiwi','pineapple','banana']
@@ -417,18 +417,3 @@ print(list1)
 #using 'extend()' method
 list1.extend(list2)
 print(list1)
-'''
-all list methods-
-
-append()	Adds an element at the end of the list
-clear()	    Removes all the elements from the list but list remain not the value.
-copy()	    Returns a copy of the list
-count()	    Returns the number of elements with the specified value
-extend()	Add the elements of a list (or any iterable), to the end of the current list
-index()	    Returns the index of the first element with the specified value [x = fruits.index(32)] [x = fruits.index("cherry", 4) '4'= where to seach start]
-insert()	Adds an element at the specified position
-pop()	    Removes the element at the specified position
-remove()	Removes the item with the specified value
-reverse()	Reverses the order of the list
-sort()	    Sorts the list
-'''

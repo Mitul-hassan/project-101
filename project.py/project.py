@@ -10,18 +10,19 @@
 print("HI")
 operator=input("which operator do you wanna use,like +,-,*....") #we can take input by input() function.+
 y=int(input("How many numbers to operate"))   # we can chose which type of input i want to take like int,float etc by int(),flast() build in function.
-list=[]               # we took a blank list and using a for loop we took one input and appended with list and loop was continuing till the how many numbers user wanted to operated.
+numlist=[]               # we took a blank list and using a for loop we took one input and appended with list and loop was continuing till the how many numbers user wanted to operated.
 for x in range(y):
     value=input(f"type the value:")
-    list.append(value)
+    numlist.append(value)
 print(f"these numbers you have taken{list}")
 if operator == '+':
     result=0
-    for x in list:
+    for x in numlist:
         result+=int(x)
 elif operator == '-':
-    for x in list:
-        result
+    result=numlist[0]
+    for x in numlist[1:]:
+        result-=int(x)
 elif operator == '*':
     result=1
     for x in list:
