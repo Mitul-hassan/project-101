@@ -419,7 +419,7 @@ list1.extend(list2)
 print(list1)
 
 
-                # Day-06 Learning 📅
+                # Day-07 Learning 📅
                 # Starting Time: 1:15 am 🕐
                 # Ending Time: 2:52 am 🕐
 '''
@@ -508,4 +508,53 @@ thistuple = tuple(y)
 #can delete the tuple completely:
 thistuple = ("apple", "banana", "cherry")
 del thistuple
-print(thistuple) #this will raise an error because the tuple no longer exists
+#print(thistuple) #this will raise an error because the tuple no longer exists
+
+                # Day-08 Learning 📅
+                # Starting Time: 1:15 am 🕐
+                # Ending Time: 2:52 am 🕐
+'''
+1.Unpack Tuple.✅
+2.Loop Tuple.✅
+'''
+#1.unpack tuple:When we create a tuple, we normally assign values to it. This is called "packing" a tuple.
+#But, in Python, we are also allowed to extract the values back into variables. This is called "unpacking"
+
+fruits =('apple','banana','cherry')
+
+(green,yellow,red) = fruits
+print(green)
+print(yellow)
+print(red)
+#The number of variables must match the number of values in the tuple, if not, you must use an asterisk to collect the remaining values as a list.
+
+#using Asterisk(*):Assign the rest of the values as a list called "red".
+fruits=('apple','banana','cherry','strwberr','raspberry')
+(green,yellow,*red)=fruits
+print(green)
+print(yellow)
+print(red)
+
+#If the asterisk is added to another variable name than the last, Python will assign values to the variable until the number of values left matches the number of variables left.
+fruits=('alu','begun','naspoti','dundul','bedena')
+green,*tropic,red=fruits
+print(green)
+print(tropic)
+print(red)
+
+#2.Loop tuples:
+#we can loop through the tuple items by using a for loop.
+thistuple=('mahmus','hassan,','mitul')
+for x in thistuple:
+    print(x)
+
+#eferring to their index number.Using the range() and len() functions to create a suitable iterable.
+for i in range(len(thistuple)):
+    print(thistuple[i])
+
+#using whole loop:
+thistuple=('apple','banana','naspoti')
+i=0
+while i < len(thistuple) :
+    print(thistuple[i])
+    i+=1
