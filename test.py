@@ -563,8 +563,8 @@ while i < len(thistuple) :
                 # Starting Time: 12:30 am 🕐
                 # Ending Time: 1:00 am 🕐
 '''
-1.Join tuples
-2.Tuple methods
+1.Join tuples✅
+2.Tuple methods✅
 '''                
 #1.join tuples
 #Join two tuples:to join two or more tuples we can use the '+' operator.
