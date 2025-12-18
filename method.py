@@ -13,4 +13,6 @@ pop()	    #Removes the element at the specified position
 remove()	#Removes the item with the specified value
 reverse()	#Reverses the order of the list
 sort()	    #Sorts the list
+count()	    Returns the number of times a specified value occurs in a tuple
+index()	    Searches the tuple for a specified value and returns the position of where it was found
 '''

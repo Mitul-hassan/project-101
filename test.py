@@ -558,3 +558,33 @@ i=0
 while i < len(thistuple) :
     print(thistuple[i])
     i+=1
+    
+                # Day-09 Learning 📅
+                # Starting Time: 12:30 am 🕐
+                # Ending Time: 1:00 am 🕐
+'''
+1.Join tuples
+2.Tuple methods
+'''                
+#1.join tuples
+#Join two tuples:to join two or more tuples we can use the '+' operator.
+
+tuple1=('a','b','c')
+tuple2=(1,2,3)
+tuple3=tuple1+tuple2
+print(tuple3)
+
+#multiply tuples:if we want to multiply the content of a tuple a given numbers of times, we can use the '*' sign.
+fruits=('apple','banana','cherry')
+mytuple=fruits*2
+print(mytuple)
+
+#Tuples methods
+#'count()' return the number of times a specified value occur in a tuple.
+thistuple=(1,2,3,4,5,3,4,5,6,6,7)
+x=thistuple.count(3)
+print(x)
+
+#'index()' searches the tuple for a specific value and return the posituon of where it is found.
+nametuple=('mahmudul','hassan','mitul')
+print(nametuple.index('mitul')) 
