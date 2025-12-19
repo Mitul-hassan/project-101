@@ -588,3 +588,81 @@ print(x)
 #'index()' searches the tuple for a specific value and return the posituon of where it is found.
 nametuple=('mahmudul','hassan','mitul')
 print(nametuple.index('mitul')) 
+
+                    # Day-10 Learning 📅
+                    # Starting Time: 11:30 am 🕐
+                    # Ending Time: 12:30 am 🕐
+'''
+1.Python set✅
+2.Access set✅
+3.Add set✅
+'''
+
+#1.Python set:
+
+#Sets are used to store multiple items in a single variable.A set is a collection which is unordered, unchangeable*, and unindexed.
+#Unordered:Set items are unchangeable, but you can remove items and add new items.Sets are unordered, so you cannot be sure in which order the items will appear.
+#Unchangeable:Once a set is created, you cannot change its items, but you can remove items and add new items.
+myset={'apple','banana','cherry'}
+print(myset)
+
+#Duplicates Not Allowed:Sets cannot have two items with the same value.One item of same value will shown.
+thisset= {'apple','banana','cherry','apple'}
+print(thisset)
+
+#The values True and 1 and The values False and 0 are considered the same value in sets, and are treated as duplicates:
+thisset= {'apple','banana','cherry',True,1,2}
+print(thisset)
+thisset={'apple','banana','cherry',False,True,0}
+print(thisset)
+
+#get the length of the set by len() function.
+thisset={'apple','banana','cherry'}
+print(len(thisset))
+
+#Data type:set item can be of any data type:
+set1={'apple','banana','chery'}
+set2={1, 5, 7, 9, 3}
+set3={True, False, False}
+setmix={'abc', 34, True, 40, 'male'}
+
+#data type of a set:
+myset={'apple','banan','cherry'}
+print(type(myset))
+
+#using the set() constructor to make a set:
+thisset= set(('apple','banana','cherry')) ## note the double round-brackets
+print(thisset)
+
+#2.Access set item:You cannot access items in a set by referring to an index or a key.
+#But you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the 'in' keyword.
+thisset={'apple','banana','cherry'}
+for x in thisset:
+    print(x)
+
+#check if 'banana' is present in the set:
+thisset={'apple','banana','cherry'}
+print('banana' in thisset)
+
+#check if 'banana' is NOT present in the set:
+thisset={'apple','banana','cherry'}
+print('banana' not in thisset)
+
+#3.Add set item:Once a set is created, you cannot change its items, but you can add new items.
+#to add one set item to a set use the 'add()' method.
+thisset={'apple','banana','cherry'}
+thisset.add('orange')
+print(thisset)
+
+#Add Sets:To add items from another set into the current set, use the update() method.
+thisset={'apple','banana','cherry'}
+tropical={'pineapple','mango','papaya'}
+
+thisset.update(tropical)
+print(thisset)
+
+#Add Any Iterable:The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).
+thisset={'apple','banana','cherry'}
+mylist=['kiwi','orange']
+thisset.update(mylist)
+print(thisset)
