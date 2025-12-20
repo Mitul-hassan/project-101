@@ -666,3 +666,47 @@ thisset={'apple','banana','cherry'}
 mylist=['kiwi','orange']
 thisset.update(mylist)
 print(thisset)
+
+                    # Day-11 Learning 📅
+                    # Starting Time: 12:05 am 🕐
+                    # Ending Time: 12:30 am 🕐
+'''
+1.Remove set item✅
+2.loop in set✅
+'''
+#1.Remove set item:To remove an item in a set, use the remove(), or the discard() method.
+thisset={'apple','banana','cherry'}
+thisset.remove('banana')
+print(thisset)
+#if the remove item does not exit in the set, remove() method will give an error.
+
+#using discard() method:If the item to remove does not exist, discard() will NOT raise an erro.so this is safer than remove() method.
+thisset={'apple','banana','cherry'}
+thisset.discard('banana')
+print(thisset)
+
+#You can also use the pop() method to remove an item, but this method will remove a random item, so you cannot be sure what item that gets removed.
+#The return value of the pop() method is the removed item.
+thisset={'apple','banana','cherry'}
+x=thisset.pop()
+print(x)
+print(thisset)
+
+#The clear() method empties the set:
+thisset={'apple','banana','cherry'}
+thisset.clear()
+print(thisset)
+
+#The del keyword will delete the set completely:
+thisset={'apple','banana','cherry'}
+del thisset
+#print(thisset)=there is no thisset so this will give error.
+
+#2.loop through the set:we can loop through the set items by using a for loop:
+myset={'apple','banana','cherrry'}
+for x in myset:
+    print(x)
+
+
+
+                   
