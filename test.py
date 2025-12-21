@@ -707,6 +707,182 @@ myset={'apple','banana','cherrry'}
 for x in myset:
     print(x)
 
+                      # Day-12 Learning 📅
+                    # Starting Time: 12:30 am 🕐
+                    # Ending Time: 1:30 am 🕐
+'''
+1.Join set✅
+2.Frozen set✅
+3.set methods✅
+'''
+#1.Join set:There are several ways to join two or more sets in Python.The union() and update() methods joins all items from both sets.
+#The Union() method returns a new set with all items from both sets.The union() method allows you to join a set with other data types, like lists or tuples.
 
+set1={'a','b','c'}
+set2={1,2,3}
+set3=set1.union(set2)
+print(set3)
 
-                   
+#You can use the | operator instead of the union() method, and you will get the same result.The  | operator only allows you to join sets with sets, and not with other data types like you can with the  union() method.
+set1={'a','b','c'}
+set2={1,2,3}
+set3=set1|set2
+print(set3)
+
+#All the joining methods and operators can be used to join multiple sets.When using a method, just add more sets in the parentheses, separated by commas.
+set1={'a','b','c'}
+set2={1,2,3}
+set3={'John','elena'}
+set4={'apple','banana','cherry'}
+myset=set1.union(set2,set3,set4)
+print(myset)
+  
+#When using the | operator, separate the sets with more | operators:
+set1={'a','b','c'}
+set2={1,2,3}
+set3={'john','alena'}
+set4={'apple','banana','cherry'}
+myset=set1|set2|set3|set4
+print(myset)     
+
+#The union() method allows you to join a set with other data types, like lists or tuples.
+x={'a','b','c'}
+y=(1,2,3)
+z=x.union(y)
+print(z)
+ 
+# The update() method inserts all items from one set into another.The update() changes the original set, and does not return a new set.
+#The update() method inserts the items in set2 into set1:
+set1={'a','b','c'}
+set2={1,2,3}
+set1.update(set2)
+print(set1)
+
+# Both union() and update() will exclude any duplicate items.
+
+#Intersection:Keep ONLY the duplicates.The intersection() method will return a new set, that only contains the items that are present in both sets.
+set1={'apple','banana','cherry'}
+set2={'google','microsoft','apple'}
+set3=set1.intersection(set2)
+print(set3)
+
+#we can use the & operator instead of the intersection() method, and you will get the same result.
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set3 = set1 & set2
+print(set3)
+
+#Note: The & operator only allows you to join sets with sets, and not with other data types like you can with the intersection() method.
+
+#The intersection_update() method will also keep ONLY the duplicates, but it will change the original set instead of returning a new set.
+set1={'appple','banana','cherry'}
+set2={'google','microsoft','apple'}
+set1.intersection_update(set2)
+print(set1)
+
+#The values True and 1 are considered the same value. The same goes for False and 0.
+set1 = {"apple", 1,  "banana", 0, "cherry"}
+set2 = {False, "google", 1, "apple", 2, True}
+set3 = set1.intersection(set2)
+print(set3)
+
+#Difference:The difference() method will return a new set that will contain only the items from the first set that are not present in the other set.
+set1={'apple','banana','cherry'}
+set2={'google','microsoft','apple'}
+set3=set1.difference(set2)
+print(set3)
+
+#we can use the - operator instead of the difference() method, and you will get the same result.
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set3 = set1 - set2
+print(set3)
+
+# The - operator only allows you to join sets with sets, and not with other data types like you can with the difference() method.
+
+#The difference_update() method will keep the items from the first set that are not in the other set, but it will change the original set instead of returning a new set.
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set1.difference_update(set2)
+print(set1)
+
+#Symmetric Differences:The symmetric_difference() method will keep only the elements that are NOT present in both sets.
+#Keep the items that are not present in both sets:
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set3 = set1.symmetric_difference(set2)
+print(set3)
+#we can use the ^ operator instead of the symmetric_difference() method, and you will get the same result.
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set3 = set1 ^ set2
+print(set3)
+# The ^ operator only allows you to join sets with sets, and not with other data types like you can with the symmetric_difference() method.
+
+#The symmetric_difference_update() method will also keep all but the duplicates, but it will change the original set instead of returning a new set.
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set1.symmetric_difference_update(set2)
+print(set1)
+
+#2.Python frozenset:frozenset is an immutable version of a set.
+'''Like sets, it contains unique, unordered, unchangeable elements.
+Unlike sets, elements cannot be added or removed from a frozenset.'''
+#Creating a frozenset:Use the frozenset() constructor to create a frozenset from any iterable.
+x=frozenset({'apple','banana','cherry'})
+print(x)
+print(type(x))
+'''
+Frozenset Methods:
+Being immutable means you cannot add or remove elements. However, frozensets support all non-mutating operations of sets.'''
+#copy() :Returns a shallow copy
+fs=frozenset({1,2,3})
+cp=fs.copy()
+print(fs)
+print(cp)
+
+#difference():	'-'	Returns a new frozenset with the difference
+a = frozenset({1, 2, 3, 4})
+b = frozenset({3, 4, 5})
+print(a.difference(b))
+print(a - b)
+
+#ntersection():	'&'	Returns a new frozenset with the intersection
+a = frozenset({1, 2, 3, 4})
+b = frozenset({3, 4, 5})
+print(a.intersection(b))
+print(a & b)
+
+#isdisjoint():Returns whether two frozensets have an intersection
+a = frozenset({1, 2})
+b = frozenset({3, 4})
+c = frozenset({2, 3})
+print(a.isdisjoint(b))
+print(a.isdisjoint(c))
+
+#issubset():'<=' / '<'	Returns True if this frozenset is a (proper) subset of another
+a = frozenset({1, 2})
+b = frozenset({1, 2, 3})
+print(a.issubset(b))
+print(a <= b)
+print(a < b)
+
+#ssuperset():'>=' / '>'	Returns True if this frozenset is a (proper) superset of another
+a = frozenset({1, 2, 3})
+b = frozenset({1, 2})
+print(a.issuperset(b))
+print(a >= b)
+print(a > b)
+
+#symmetric_difference():'^'	Returns a new frozenset with the symmetric differences	
+a = frozenset({1, 2, 3})
+b = frozenset({3, 4, 5})
+print(a.symmetric_difference(b))
+print(a ^ b)
+
+#union():'|'	Returns a new frozenset containing the union	
+a = frozenset({1, 2})
+b = frozenset({2, 3})
+print(a.union(b))
+print(a | b)
+
