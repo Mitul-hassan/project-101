@@ -890,8 +890,8 @@ print(a | b)
                     # Starting Time: 1:20 am 🕐
                     # Ending Time: : am 🕐
 '''
-1.Puthon Dictionaries
-2.Access in dictionarie
+1.Puthon Dictionaries✅
+2.Access in dictionarie✅
 '''    
 #Dictionaries are used to store data values in key:value pairs.A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
 thisdict={
@@ -947,7 +947,10 @@ print(type(thisdict))
 thisdict=dict(name='john',age=36,country='norway')
 print(thisdict)
 
-#2.Access Dictionary
+                    # Day-14 Learning 📅
+                    # Starting Time: 1:20 am 🕐
+                    # Ending Time: : am 🕐
+#Access Dictionary✅
 #Accessing items:we can access the items of a dictionary by referring to its key name, inside square brackets
 thisdict={
     'brand':'Foard',
@@ -1031,3 +1034,48 @@ thisdict={
 }
 if 'model' in thisdict:
     print('yes')
+
+
+                    # Day-15 Learning 📅
+                    # Starting Time: 1:20 am 🕐
+                    # Ending Time: : am 🕐
+'''
+1.Change Dictionary Items.✅
+2.Add Dictionary Items✅
+'''
+#1.Change Values:we can change the value of a specific item by referring to its key name:
+thisdict={
+    'brand':'Foard',
+    'model':'Mustang',
+    'year':1964
+}
+thisdict['year']=2018
+
+#Update Dictionary:The update() method will update the dictionary with the items from the given argument.The argument must be a dictionary, or an iterable object with key:value pairs.
+thisdict={
+    'brand':'Foard',
+    'model':'Mustang',
+    'year':1964
+}
+thisdict.update({'brand':'Ferari',
+               'model':'F40'  })
+print(thisdict)
+
+#2.Add Dictionary Items.
+#Adding Items:Adding an item to the dictionary is done by using a new index key and assigning a value to it:
+thisdict={
+    'brand':'Foard',
+    'model':'Mustang',
+    'year':1964
+}
+thisdict['color']='red'
+print(thisdict)
+
+#Update Dictionary:The update() method will update the dictionary with the items from a given argument. If the item does not exist, the item will be added.
+#The argument must be a dictionary, or an iterable object with key:value pairs.
+thisdict={
+    'brand':'Foard',
+    'model':'Mustang',
+    'year':1964
+}
+thisdict.update({'color':'read'})
