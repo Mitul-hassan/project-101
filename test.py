@@ -1079,3 +1079,49 @@ thisdict={
     'year':1964
 }
 thisdict.update({'color':'read'})
+
+                    # Day-16 Learning 📅
+                    # Starting Time: 1:20 am 🕐
+                    # Ending Time: : am 🕐
+'''
+1.Removing Items
+2.Loop Through a Dictionary
+'''
+#Removing Items
+#The pop() method removes the item with the specified key name:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.pop("model")
+print(thisdict)
+
+#The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.popitem()
+print(thisdict)
+
+#The del keyword removes the item with the specified key name:
+thisdict={
+    'brand': 'Ford',
+    'model':'Mustang',
+    'year':1964
+}
+del thisdict['model']
+print(thisdict) #this will casuse an error because 'thisdict' no longer exists.
+
+#The clear() method empties the dictionary:
+thisdict={
+    'brand':'Ford',
+    'model':'Mustang',
+    'year':1964
+}
+thisdict.clear()
+print(thisdict)
+
+
