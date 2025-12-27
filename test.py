@@ -1124,4 +1124,101 @@ thisdict={
 thisdict.clear()
 print(thisdict)
 
+#2.Loop Through a Dictionary:You can loop through a dictionary by using a for loop.When looping through a dictionary, the return value are the keys of the dictionary, but there are methods to return the values as well.
+#Print all key names in the dictionary, one by one:
+for x in thisdict:
+    print(x)
+
+#Print all values in the dictionary, one by one:
+for x in thisdict:
+    print(thisdict[x])
+    
+#we can also use the values() method to return values of a dictionary:
+for x in thisdict.values():
+    print(x)
+
+#we can use the keys() method to return the keys of a dictionary:
+for x in thisdict.keys():
+    print(x)
+
+#Loop through both keys and values, by using the items() method:
+for x,y in thisdict.items():
+    print(x,y)
+              
+              
+                    # Day-17 Learning 📅
+                    # Starting Time:5:30 pm 🕐
+                    # Ending Time: : m 🕐
+'''
+1.Copy Dictionaries.
+2.Nested Dictionaries.
+3.Dictionary Methods.
+'''
+#1.Copy Dictionaries:
+#You cannot copy a dictionary simply by typing dict2 = dict1, because: dict2 will only be a reference to dict1, and changes made in dict1 will automatically also be made in dict2.
+
+#There are ways to make a copy, one way is to use the built-in Dictionary method copy().
+thisdict={
+    'brand':'Ford',
+    'model':'Mudtang',
+    'year':1964
+}
+mydict=thisdict.copy()
+print(mydict)
+
+#Another way to make a copy is to use the built-in function dict().
+thisdict={
+    'brand':'Fosrd',
+    'model':'Mustang',
+    'year':1964
+}
+mydict=dict(thisdict)
+print(mydict)
+
+#2.Nested Dictionaries:A dictionary can contain dictionaries, this is called nested dictionaries.
+myfamily={
+    'child1':{
+        'name':'emil',
+        'year':2004
+    },
+    'child2':{
+        'name':'Tobias',
+        'year':2007
+    },
+    'child3':{
+        'name':'Linud',
+        'year':2011
+    }
+}
+print(myfamily)
+
+#Or, if we want to add three dictionaries into a new dictionary:
+child1={
+    'name':'Emil',
+    'year':2004
+}
+child2={
+    'name':'Tobaias',
+    'year':2007
+}
+child3={
+    'name':'Linus',
+    'year':2011
+}
+
+myfamily={
+    'child1':child1,
+    'child2':child2,
+    'child3':child3
+}
+
+#Access Items in Nested Dictionaries:To access items from a nested dictionary, we use the name of the dictionaries, starting with the outer dictionary.
+print(myfamily['child2']['name'])
+
+#Loop Through Nested Dictionaries:we can loop through a dictionary by using the items() method like this:
+#Loop through the keys and values of all nested dictionaries:
+for x,obj in myfamily.items():
+    print(x)
+    for y in obj:
+        print(y+':',obj[y])
 
