@@ -1315,3 +1315,51 @@ match day:
         print('A weekday in May')
     case _:
         print('No match')
+    
+                    # Day-19 Learning 📅
+                    # Starting Time: 2:00 pm 🕐
+                    # Ending Time: : m 🕐
+'''
+Python Functions:A function is a block of code which only runs when it is called.A function can return data as a result.A function helps avoiding code repetition.
+'''
+#Creating a Function:In Python, a function is defined using the def keyword, followed by a function name and parentheses:
+def my_function():
+    print('Hello from a function')
+#This creates a function named my_function that prints "Hello from a function" when called.The code inside the function must be indented. Python uses indentation to define code blocks.
+
+#Calling a Function:To call a function, write its name followed by parentheses:
+def my_function():
+    print('Hello from a function')
+
+my_function()
+'''
+Function Names
+Function names follow the same rules as variable names in Python:
+A function name must start with a letter or underscore
+A function name can only contain letters, numbers, and underscores
+Function names are case-sensitive (myFunction and myfunction are different)
+
+Valid function names:
+calculate_sum()
+_private_function()
+myFunction2()
+'''
+def farenheit_to_celsius(farenheit):
+    return (farenheit - 32)* 5/9
+
+print(farenheit_to_celsius(77))
+print(farenheit_to_celsius(95))
+
+#Return Values:Functions can send data back to the code that called them using the return statement.When a function reaches a return statement, it stops executing and sends the result back:
+def get_greeting():
+    return "hello from a function"
+
+message=get_greeting()
+print(message)
+#If a function doesn't have a return statement, it returns None by default.
+
+#The pass Statement:Function definitions cannot be empty. If you need to create a function placeholder without any code, use the pass statement:
+def my_function():
+    pass
+#The pass statement is often used when developing, allowing you to define the structure first and implement details later.
+
