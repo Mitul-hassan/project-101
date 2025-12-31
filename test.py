@@ -1396,12 +1396,100 @@ my_function('tobais')
 my_function()
 my_function('linus')
 
-#Keyword Arguments:You can send arguments with the key = value syntax.
+#Keyword Arguments:we can send arguments with the key = value syntax.This way, with keyword arguments, the order of the arguments does not matter.
 def my_function(animal,name):
     print('I have a',animal)
     print('My',animal+"'s name is", name)
 my_function(animal='dog',name='Buddy')
 #The phrase Keyword Arguments is often shortened to kwargs in Python documentation.
 
-#Positional Arguments:When you call a function with arguments without using keywords, they are called positional arguments.Positional arguments must be in the correct order:
+#Positional Arguments:When we call a function with arguments without using keywords, they are called positional arguments.Positional arguments must be in the correct order:
+def my_function(animal, name):
+    print('I have a',animal)
+    print("My",animal+"'s name is",name)
+
+my_function('dog','Buddy')
+
+#Mixing Positional and Keyword Arguments: we can mix positional and keyword arguments in a function call.However, positional arguments must come before keyword arguments:
+def my_function(animal, name, age):
+    print("I have a",age, "year old", animal, "named",name)
+
+my_function("dog",name="Buddy",age=5)
+
+#Passing Different Data Types:You can send any data type as an argument to a function (string, number, list, dictionary, etc.).
+
+def my_function(fruits):
+    for x in fruits:
+        print(x)
+
+my_fruits=['apple','banana','cherry']
+my_function(my_fruits)
+
+#Sending a dictionary as an argument:
+def my_function(person):
+    print("Name:",person['name'])
+    print("Age:",person['age'])
+
+my_person={
+    'name':'Emil',
+    'age':25
+}
+my_function(my_person)
+
+#Return Values:Functions can return values using the return statement:
+def my_function(x,y):
+    return x+y
+result= my_function(5,3)
+print(result)
+
+#Returning Different Data Types:Functions can return any data type, including lists, tuples, dictionaries, and more.
+#A function that returns a list.
+
+def my_function():
+    return ['aplle','banana','cherry']
+
+fruits= my_function()
+print(fruits[0])
+print(fruits[1])
+
+#A function that returns a tuple:
+def my_function():
+    return (10,20)
+x,y= my_function()
+print("x:",x)
+print("y:",y)
+
+#Positional-Only Arguments: we can specify that a function can have ONLY positional arguments.To specify positional-only arguments, add ( , / ) after the arguments:
+def my_function(name, /):
+    print("Hello",name)
+    
+my_function("Emil")
+
+#Without the , / we are actually allowed to use keyword arguments even if the function expects positional arguments:
+def my_function(name):
+    print("Hello",name)
+
+my_function(name="Emil")
+
+'''
+With (, /) we will get an error if you try to use keyword arguments:
+
+Example
+def my_function(name, /):
+  print("Hello", name)
+
+my_function(name = "Emil")
+'''
+#Keyword-Only Arguments:To specify that a function can have only keyword arguments, add (*,) before the arguments:
+def my_function(*, name):
+    print('Hello', name)
+    
+my_function(name = "Emil")
+
+#Combining Positional-Only and Keyword-Only: we can combine both argument types in the same function.Arguments before / are positional-only, and arguments after * are keyword-only:
+
+def my_function(a,b,/,*,c,d):
+    return a+b+c+d
+result=my_function(5,10,c=15,d=20)
+print(result)
 
